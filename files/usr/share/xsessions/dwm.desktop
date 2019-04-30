@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=DWM
+Comment=This session logs you into GNOME
+Comment[zh_CN]=此会话将您登录到 DWM
+Comment=This session logs you into DWM
+Exec=dwm
+TryExec=dwm
+Type=Application
+DesktopNames=DWM
