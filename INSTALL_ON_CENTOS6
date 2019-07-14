@@ -1,0 +1,19 @@
+# Problem
+
+Build error FC_COLOR undeclared
+
+# Analysis
+
+FC_COLOR wasn't added to fontconfig until 2.11.91 - stretch is using 2.11.0
+
+# Fix
+
+Download, build, and install fontconfig-2.11.91
+
+$ curl -LOk https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.11.91.tar.gz
+$ tar -xzf fontconfig-2.11.91.tar.gz
+$ cd fontconfig-2.11.91
+$ ./configure
+$ make && make install
+
+Then continue on `dwm` make , which should work after this
